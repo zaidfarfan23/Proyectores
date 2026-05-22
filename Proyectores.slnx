@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Elementos de la solución/">
+    <File Path="README.md" />
+    <File Path="WebApp/Views/Home/soto.jpg" />
+  </Folder>
+  <Project Path="WebApp/WebApp.csproj" />
+</Solution>
