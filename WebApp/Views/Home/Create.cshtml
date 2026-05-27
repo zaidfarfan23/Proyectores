@@ -1,4 +1,5 @@
-﻿@model Proyector
+﻿@using WebApp.ViewModels;
+@model HomeCreateViewModel
     
 
 @{
@@ -15,18 +16,11 @@
 
            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <div class="form-group mb-3">
-                <label class="form-label" asp-for="Id">Numero de proyector</label>
-                <input type="number" class="form-control" asp-for="Id"id="Id"/>
-                <span asp-validation-for="Id" class="text-danger"></span>
-
-            </div>
-
             
             <div class="form-group mb-3">
                 <label class="form-label" asp-for="Marca">Marca</label>
                 <input type="text" class="form-control" asp-for="Marca" id="Marca" />
-                <span asp-validation-for="Marca" class="text-danger">Se requiere la marca</span>
+                <span asp-validation-for="Marca" class="text-danger"></span>
 
             </div>
 
@@ -34,13 +28,13 @@
             <div class="form-group mb-3">
                 <label class="form-label" asp-for="Modelo">Modelo</label>
                 <input type="text" class="form-control" asp-for="Modelo" id="Modelo" />
-                <span asp-validation-for="Modelo" class="text-danger">Se requiere el modelo</span>
+                <span asp-validation-for="Modelo" class="text-danger"></span>
             </div>
 
             <div class="form-group mb-3">
                 <label class="form-label" asp-for="NumeroDeSerie">Numero de Serie</label>
                 <input type="number" class="form-control" asp-for="NumeroDeSerie" id="NumeroDeSerie" />
-                <span asp-validation-for="NumeroDeSerie" class="text-danger">Se requiere el numero de serie</span>
+                <span asp-validation-for="NumeroDeSerie" class="text-danger"></span>
             </div>
 
             <div class="form-group mb-3">

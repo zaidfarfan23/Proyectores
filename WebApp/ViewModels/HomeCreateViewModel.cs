@@ -1,25 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.CodeAnalysis;
+using WebApp.Models;
 
-namespace WebApp.Models
+namespace WebApp.ViewModels
 {
-    public class Proyector
+    public class HomeCreateViewModel
     {
-
-        [Key]
-        
-        public int Id { get; set; }
-        
-        [Required]
+        [Required(ErrorMessage ="Se requiere proporcionar la marca")]
         [StringLength(24)]
 
         public string Marca { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Debe proporcionar un valor para el modelo")]
 
         public string Modelo { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Requiere poner el número de serie")]
 
         public string NumeroDeSerie { get; set; }
 
@@ -30,12 +25,5 @@ namespace WebApp.Models
 
         [DataType(DataType.Date)]
         public DateTime? FechaDeBaja { get; set; } = null;
-    }
-
-    public enum SituacionProyector
-    {
-        Bueno = 1,
-        Regular,
-        Horible 
     }
 }
