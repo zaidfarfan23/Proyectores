@@ -22,7 +22,7 @@ namespace WebApp.Controllers
 
        
 
-        public IActionResult Create()
+        public IActionResult Create() 
         {
             var modelo = new HomeCreateViewModel();
             modelo.FechaDeAlta = DateTime.Now;
